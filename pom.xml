@@ -26,6 +26,25 @@
             <version>5.4.0</version>
         </dependency>
 
+        <!--es地理位置搜索依赖-->
+        <dependency>
+            <groupId>org.locationtech.spatial4j</groupId>
+            <artifactId>spatial4j</artifactId>
+            <version>0.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vividsolutions</groupId>
+            <artifactId>jts</artifactId>
+            <version>1.13</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>xerces</groupId>
+                    <artifactId>xercesImpl</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
         <!--log4j-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
